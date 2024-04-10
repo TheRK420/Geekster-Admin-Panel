@@ -1,0 +1,72 @@
+.App.dark{
+    background-color: #111;
+    color: rgb(156,156,156);
+
+    .chartGrid{
+        stroke: rgba(228,228,228,0.219);
+    }
+
+    .table{
+        background-color: #111;
+
+        .tableCell{
+            color: gray;
+        }
+    }
+
+    .navbar{
+        color: #999;
+        border-color: #333;
+
+        .search{
+            border-color: gray;
+        }
+    }
+
+    .Sidebar{
+        background-color: #111;
+        border-color: #333;
+
+        hr{
+            border-color: #333;
+        }
+
+        ul{
+            li{
+                &:hover{
+                    background-color: #333;
+                }
+            }
+        }
+    }
+
+    .datatable{
+
+        .css-1essi2g-MuiDataGrid-columnHeaderRow{
+            background-color: #111;
+        }
+        .datagrid{
+            color: gray;
+            border: none;
+
+            .viewButton, .deleteButton{
+                color: gray;
+            }
+
+            .cellwithStatus{
+                &.Approved{
+                    color: lightgreen;
+                }
+
+                &.Pending{
+                    color: yellow;
+                }
+            }
+        }
+    }
+
+    input{
+        background-color: transparent;
+    }
+}
+

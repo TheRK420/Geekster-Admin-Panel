@@ -1,0 +1,60 @@
+.profile {
+  display: flex;
+  width: 100%;
+
+  .profilecontainer {
+    flex: 6;
+    .left {
+      flex: 1;
+      box-shadow: rgba(78, 78, 78, 0.35) 0px 5px 15px;
+      padding: 20px;
+      position: relative;
+
+      .editButton {
+        height: 20px;
+        width: 35px;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        color: #38a169;
+        background-color: #38a16967;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .item {
+        display: flex;
+        gap: 20px;
+      }
+
+      .itemimg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .details {
+        .itemTitle {
+          margin-bottom: 10px;
+          color: #555;
+        }
+
+        .detailItem {
+          margin-bottom: 10px;
+          font-size: 14px;
+
+          .itemKey {
+            font-weight: bold;
+            color: gray;
+            margin-right: 5px;
+          }
+
+          .itemValue {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

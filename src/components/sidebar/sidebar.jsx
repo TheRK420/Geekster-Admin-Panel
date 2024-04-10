@@ -47,10 +47,12 @@ const Sidebar = () => {
             <span>Courses</span>
             </li>
             </Link>
+            <Link to="/registrations" style={{textDecoration:"none"}}>
             <li>
             <HowToRegIcon className="icon" />  
             <span>Registrations</span>
             </li>
+            </Link>
             <li>
             <CreditCardIcon className="icon" />  
             <span>Joinees</span>
@@ -78,10 +80,12 @@ const Sidebar = () => {
             <span>Settings</span>
             </li>
             <p className="title">PROFILE</p>
+            <Link to="/profile" style={{textDecoration:"none"}}>
             <li>
             <AccountBoxIcon className="icon" />  
             <span>Profile</span>
             </li>
+            </Link>
             <li>
             <LogoutIcon className="icon" />  
             <span>Logout</span>

@@ -3,25 +3,25 @@ export const userInputs = [
       id: 1,
       label: "Username",
       type: "text",
-      placeholder: "john_doe",
+      placeholder: "Sourasish_Sengupta",
     },
     {
       id: 2,
       label: "Name and surname",
       type: "text",
-      placeholder: "John Doe",
+      placeholder: "Sourasish Sengupta",
     },
     {
       id: 3,
       label: "Email",
       type: "mail",
-      placeholder: "john_doe@gmail.com",
+      placeholder: "Sourasish_Sengupta@gmail.com",
     },
     {
       id: 4,
       label: "Phone",
       type: "text",
-      placeholder: "+1 234 567 89",
+      placeholder: "+91 7001694096",
     },
     {
       id: 5,
@@ -32,13 +32,13 @@ export const userInputs = [
       id: 6,
       label: "Address",
       type: "text",
-      placeholder: "Elton St. 216 NewYork",
+      placeholder: "Asansol,WB",
     },
     {
       id: 7,
       label: "Country",
       type: "text",
-      placeholder: "USA",
+      placeholder: "India",
     },
   ];
   
@@ -47,7 +47,7 @@ export const userInputs = [
       id: 1,
       label: "Title",
       type: "text",
-      placeholder: "Apple Macbook Pro",
+      placeholder: "Full Stack Web Development",
     },
     {
       id: 2,
@@ -59,18 +59,18 @@ export const userInputs = [
       id: 3,
       label: "Category",
       type: "text",
-      placeholder: "Computers",
+      placeholder: "Frontend Development",
     },
     {
       id: 4,
       label: "Price",
       type: "text",
-      placeholder: "100",
+      placeholder: "50000",
     },
     {
       id: 5,
-      label: "Stock",
+      label: "Available Slots",
       type: "text",
-      placeholder: "in stock",
+      placeholder: "50",
     },
   ];

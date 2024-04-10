@@ -1,10 +1,10 @@
-import "./datatable.scss";
+import "./courseData.scss";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { userRows, userColumns } from "./datatablesource";
+import { userRows, userColumns } from "./courseDatasource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Datatable = () => {
+const CourseDatasource = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id, event) => {
@@ -20,9 +20,6 @@ const Datatable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
             <div
               className="deleteButton"
               onClick={(event) => handleDelete(params.row.id, event)}
@@ -35,11 +32,11 @@ const Datatable = () => {
     },
   ];
   return (
-    <div className="datatable">
-      <div className="datatableTitle">
-        Add new User
+    <div className="courseDatasource">
+      <div className="courseDatasourceTitle">
+        Add new course
         <Link
-          to="/users/new"
+          to="/products/new"
           style={{ textDecoration: "none" }}
           className="link"
         >
@@ -63,4 +60,4 @@ const Datatable = () => {
   );
 };
 
-export default Datatable;
+export default CourseDatasource;

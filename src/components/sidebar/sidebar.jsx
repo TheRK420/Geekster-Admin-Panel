@@ -62,10 +62,12 @@ const Sidebar = () => {
             <span>Joinees</span>
             </li>
             <p className="title">USEFUL</p>
+            <Link to="/stats" style={{textDecoration:"none"}}>
             <li>
             <AssessmentIcon className="icon" />  
             <span>Stats</span>
             </li>
+            </Link>
             <li>
             <NotificationsActiveOutlinedIcon className="icon" />  
             <span>Notifications</span>

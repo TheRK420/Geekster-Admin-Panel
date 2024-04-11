@@ -5,7 +5,8 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Courses from "./pages/courses/Courses";
 import Registration from "./pages/Registrations/Registration";
-import Profile from "./pages/profile/Profile"
+import Profile from "./pages/profile/Profile";
+import Stats from "./pages/stats/Stats"
 import {Routes,Route,BrowserRouter} from "react-router-dom";
 import { userInputs,productInputs } from "./formsource";
 import "./style/dark.scss"
@@ -34,6 +35,7 @@ function App() {
             </Route>
             <Route path="registrations" element={<Registration/>} />
             <Route path="profile" element={<Profile/>} />
+            <Route path="stats" element={<Stats/>} />
           </Route>
         </Routes>
       </BrowserRouter>

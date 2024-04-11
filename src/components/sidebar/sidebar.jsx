@@ -14,8 +14,12 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import {Link} from "react-router-dom";
 import { DarkModeContext } from "../context/darkModeContext";
 import { useContext } from 'react';
+import { signOut } from 'firebase/auth';
+import { database } from '../../pages/login/FirebaseConfig';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+  const history = useNavigate();
   const {dispatch} = useContext(DarkModeContext);
   return (
     <div className='Sidebar'>
@@ -88,7 +92,11 @@ const Sidebar = () => {
             </Link>
             <li>
             <LogoutIcon className="icon" />  
-            <span>Logout</span>
+            <span onClick={()=>{
+              signOut(database).then(val=>{
+                history('/')
+              })
+            }}>Logout</span>
             </li>
         </ul>
       </div>

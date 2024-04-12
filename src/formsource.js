@@ -1,44 +1,50 @@
 export const userInputs = [
     {
-      id: 1,
+      id: "username",
       label: "Username",
       type: "text",
       placeholder: "Sourasish_Sengupta",
     },
     {
-      id: 2,
+      id: "displayname",
       label: "Name and surname",
       type: "text",
       placeholder: "Sourasish Sengupta",
     },
     {
-      id: 3,
+      id: "email",
       label: "Email",
       type: "mail",
       placeholder: "Sourasish_Sengupta@gmail.com",
     },
     {
-      id: 4,
-      label: "Phone",
-      type: "text",
-      placeholder: "+91 7001694096",
-    },
-    {
-      id: 5,
+      id: "password",
       label: "Password",
       type: "password",
     },
     {
-      id: 6,
-      label: "Address",
+      id: "age",
+      label: "Age",
       type: "text",
-      placeholder: "Asansol,WB",
+      placeholder: "22",
     },
     {
-      id: 7,
-      label: "Country",
+      id: "amount",
+      label: "Amount Paid",
       type: "text",
-      placeholder: "India",
+      placeholder: "amount",
+    },
+    {
+      id: "method",
+      label: "Payment Method",
+      type: "text",
+      placeholder: "Cash/EMI",
+    },
+    {
+      id: "status",
+      label: "Status",
+      type: "text",
+      placeholder: "Approved/Pending",
     },
   ];
   
